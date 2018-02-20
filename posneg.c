@@ -7,13 +7,13 @@ int main(void)
 	scanf("%d",&N);
 	if(N>=1 && N<=100000)
 	{
-		if(N>0)
+	      if(N>=1 && N<=100000)
                   printf("Positive number");
-              else if(N<0)
-    	         printf("Negative number");
               else 
-                 printf("The number is zero");
+    	         printf("Negative number");
 	}
+	else if(N==0)
+                 printf("The number is zero");
 	else
 	    printf("Enter a valid number");
     	return 0;
