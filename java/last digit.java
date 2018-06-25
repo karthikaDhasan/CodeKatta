@@ -23,12 +23,13 @@ class Ideone
 	             	char d2[]=d.toCharArray();
 			int n=c.length();
 			int m=d.length();
-			int g=n-1;
-			int h=m-1;
-			for(int i=g;i<=g;i++)
+			int n=c.length()-1;
+			int m=d.length()-1;
+			
+			for(int i=n;i<=n;i++)
 		     	{
-			 int c1=Integer.parseInt(Character.toString(c2[g]));
-			int d1=Integer.parseInt(Character.toString(d2[h]));
+			 int c1=Integer.parseInt(Character.toString(c2[n]));
+			int d1=Integer.parseInt(Character.toString(d2[m]));
 				s=c1+d1;
 			     System.out.println("ss"+ " " +s);
 		     	}
