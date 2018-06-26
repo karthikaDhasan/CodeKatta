@@ -15,6 +15,14 @@ class Ideone
 		String[] sp=st.split(" ");
 		String s2;
 		int i;
+		System.out.println("the reverse:"); 
+		for(i=s.length()-1;i>=0;i--)
+		{
+			
+			System.out.print(s.charAt(i));
+			
+		}
+		
 		System.out.println("after split:");
 		
 		for(String  s1:sp)
