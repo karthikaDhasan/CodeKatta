@@ -13,33 +13,33 @@ class Ideone
 		Scanner sc=new Scanner(System.in);
 		String st=sc.nextLine();
 		String[] sp=st.split(" ");
-		String s2;
+		String s2="";
 		int i;
-		System.out.println("the reverse:"); 
-		for(i=s.length()-1;i>=0;i--)
-		{
-			
-			System.out.print(s.charAt(i));
-			
-		}
-		
 		System.out.println("after split:");
 		
 		for(String  s1:sp)
 		{          
 			System.out.print(" " +s1);
-			System.out.println("\n");
+			
 			s2=s1;
 		}
+		System.out.println(" ");
+		System.out.println("the reverse:"); 
 		for(String s1:sp)
 		{
-		 for(i=0;i<s1.length();i++)
-		{
-		char a[]=s1.toCharArray();
+		 StringBuilder sb=new StringBuilder(s1);
+		 sb.reverse();
+		 String b=new String(sb);
+		 for(i=0;i<b.length();i++)
+		      { 
+		
+		char a[]=b.toCharArray();
 		 
 		   if(Character.isUpperCase(a[i]))
 		  {
-		      	System.out.print(Character.toLowerCase(a[i]));
+		     System.out.print(Character.toLowerCase(a[i]));
+		      	
+		      	
 		  }
 		  else
 		  {
@@ -47,6 +47,8 @@ class Ideone
 		  }
 		}
 	}
+		
+		
 	
 	}
 	
