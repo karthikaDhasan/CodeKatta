@@ -28,7 +28,7 @@ class Ideone
 		for(String s1:sp)
 		{
 		 StringBuilder sb=new StringBuilder(s1);
-		 sb.reverse();
+		 System.out.print(sb.reverse());
 		 String b=new String(sb);
 		 for(i=0;i<b.length();i++)
 		      { 
