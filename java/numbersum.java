@@ -1,31 +1,37 @@
+/* package whatever; // don't place package name! */
 
-public class palindrome {
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int a=1234,t=0,t1=0;
-		String b=Integer.toString(a);
-		if(b.charAt(0)!=0)
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		int  s=-123,sum=0,t=0,sum1=0;
+		int n=Math.abs(s);
+	  while(n>0)
 		{
-			int s=Integer.parseInt(b);
-			do
+			t=n%10;
+			sum=sum+t;
+			n=n/10;
+			if(sum>9)
 			{
-				while(s>0)
-			{
-				
-					t=s%10;
-					t1=t1+t;
-					s=s/10;
-				
-			 }
-			}while(t1>9);
-			
-			System.out.println("+" +t1);
-			
+				n=sum;
+				sum=0;
+			}
+		}
+		sum1=sum;
+		if(s<0)
+		{
+			sum1=-sum1;
 		}
 		else
-		 System.out.println("-" +t1);
+		{
+			sum1=sum1;
+		}
+		System.out.println(sum1);
 	}
-
 }
