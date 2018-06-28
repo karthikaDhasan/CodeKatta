@@ -7,7 +7,7 @@ public class ggg {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n[]={54,27},i,t;
-		int s,s1=0;
+		int s;
 		
  for(i=0;i<n.length;i++)
  {
@@ -20,7 +20,7 @@ t=n[i]%10;
 if(t>=s)
 {
 	s=t;
-	s1=s;
+	
 }
 n[i]=n[i]/10;
 }
