@@ -10,15 +10,17 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-			String s="wipro@tech";
-		String[] a=s.split("@");
-		for(String b:a)
-		{            
-			System.out.println(b);
-			String c=b;
-			StringBuilder c1=new StringBuilder(c);
-			c1.reverse();
-				System.out.println(c1);
+	            Scanner sc=new Scanner(System.in);
+	            String s1=sc.nextLine();
+	            String s2=sc.nextLine();
+		String s3=s1.concat(" " +s2);
+		System.out.println(s3);
+		String[] s4=s3.split(" ");
+		for(String s5:s4)
+		{
+			StringBuilder s=new StringBuilder(s5);
+			System.out.print(s.reverse() + " ");
 		}
+		
 	}
 }
