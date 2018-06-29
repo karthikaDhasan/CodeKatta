@@ -20,7 +20,8 @@ class Ideone
 				str=str+c;
 				c1++;
 			}
-			else{
+			else if(Character.isLetter(c))
+			{
 				if(c1>0){
 					sum=sum+Integer.valueOf(str);
 				c1=0;	
