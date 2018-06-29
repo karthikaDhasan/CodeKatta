@@ -12,7 +12,7 @@ class Ideone
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
 		String  s1= sc.nextLine();
-		String str="";
+		String str="0";
 		int sum=0,c1=0;
 		for(int i=0;i<s1.length();i++){
 			char c =s1.charAt(i);
@@ -24,7 +24,7 @@ class Ideone
 				if(c1>0){
 					sum=sum+Integer.valueOf(str);
 				c1=0;	
-				str="";
+				str="0";
 				}
 			}
 		}
